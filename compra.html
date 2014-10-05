@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    window.setTimeout("control_del_back()", 500);
+    function control_del_back(){
+        window.location.href='#no_use_el_boton_back_de_su_navegador' //aquí se genera un HASH para poder controlar el back!
+        var loc = window.location.hash;
+        setInterval(function(){
+            if (window.location.hash != loc) {
+                loc = window.location.hash;
+                alert("Por favor si desea retroceder o avanzar en el proceso de compra utilize el botón retroceder/continuar de la página de compras," +
+                        "de lo contrario este proceso de compras se verá afectado y no podrá continuar de manera exitosa su compra...");
+                //alert("Joder coño, le dijimos que no use el botón back de su navegador");
+            }
+        }, 100); //Esta función chequea si el hash cambia y emite el mensaje detectando que el back se presiono dentro del contexto de la página.
+    }
+</script>
+Esta es la página de compras aquí haces todo el proceso de compras, seleccionas boletos, butacas, combos y pagas!!!
+</body>
+</html>
