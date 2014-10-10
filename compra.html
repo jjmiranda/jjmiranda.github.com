@@ -5,6 +5,19 @@
     <title></title>
 </head>
 <body>
+<script language="JavaScript" type="text/javascript">
+     
+    var bPreguntar = true;
+     
+    window.onbeforeunload = preguntarAntesDeSalir;
+     
+    function preguntarAntesDeSalir()
+    {
+      if (bPreguntar)
+        return "¿Seguro que quieres abandonar el proceso de compra? Si sales de esta página tu compra no será procesada exitosamente.";
+    }
+</script>
+
 <script>
     window.setTimeout("control_del_back()", 500);
     function control_del_back(){
