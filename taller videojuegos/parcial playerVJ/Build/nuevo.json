@@ -1,0 +1,12 @@
+{
+"companyName": "DefaultCompany",
+"productName": "ExamenParcialTPVID2019-1",
+"dataUrl": "nuevo.data.unityweb",
+"wasmCodeUrl": "nuevo.wasm.code.unityweb",
+"wasmFrameworkUrl": "nuevo.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#292728"
+}
